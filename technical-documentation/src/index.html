@@ -1,0 +1,355 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<html>
+  <body>
+        <nav id="navbar">
+      <header>Python documentation</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#Introduction">Introduction</a>
+          </li>
+           <li>
+          <a class="nav-link" href="#Python_Getting_Started">Python Getting Started</a>
+          </li>
+           <li>
+          <a class="nav-link" href="#Python_Syntax">Python Syntax</a>
+          </li>
+           <li>
+          <a class="nav-link" href="#Python_Comments">Python Comments</a>
+          </li>
+                     <li>
+          <a class="nav-link" href="#Python_Variables">Python Variables</a>
+          </li>
+         <li>
+          <a class="nav-link" href="#Python_Numbers">Python Numbers</a>
+          </li>
+         <li>
+          <a class="nav-link" href="#Python_Casting">Python Casting</a>
+          </li>
+         <li>
+          <a class="nav-link" href="#Python_Strings">Python Strings</a>
+          </li>
+         <li>
+          <a class="nav-link" href="#Python_Operators">Python Operators</a>
+          </li>
+         <li>
+          <a class="nav-link" href="#Python_Lists">Python Lists</a>
+          </li>
+        <li>
+          <a class="nav-link" href="#Reference">Reference</a>
+          </li>
+        </ul>
+      </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>
+            Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+          </p>
+          <p> 
+            It is used for:
+          </p>
+           <ul>
+            <li>
+              web development (server-side),
+             </li>
+             <li>
+               software development
+               </li>
+             <li>
+               mathematics,
+               </li>
+             <li>
+               system scripting.
+               </li>
+             </ul>
+          </article>
+        </section>
+      <section class="main-section" id="Python_Getting_Started">
+        <header>Python Getting Started</header>
+        <article>
+          <p>
+            Many PCs and Macs will have python already installed.
+          </p>
+          <p>
+            To check if you have python installed on a Windows PC, search python in search bar or run the following code in the command line (cmd)
+            </p>
+          <code>
+            c:users\your Name>python --version
+            </code>
+          <p>To check if you have python installed on a Linux or Mac, then on linux open the command line or on Mac open the Terminal and type:
+            </p>
+          <code>
+            python --version
+          </code>
+          <p>
+            If not installed you can download a suitable version from python's official website.
+            </p>
+           
+          </article>
+        </section>
+      <section class="main-section" id="Python_Syntax">
+        <header>Python Syntax</header>
+        <article>
+          <p>
+            Python syntax can be executed by writing directly in the Command Line:
+          </p>
+          <code
+>>> print("Hello, World!")
+Hello, World!
+            </code>
+          <p>
+Or by creating a python file on the server, using the .py file extension, and running it in the Command Line:
+</p>
+          <code>
+C:\Users\Your Name>python myfile.py
+          </code>
+          </article>
+        </section>
+      <section class="main-section" id="Python_Comments">
+        <header>Python Comments</header>
+        <article>
+          <p>
+          Comments can be used to explain Python code.
+          </p>
+          <p>
+          Comments can be used to make the code more readable.
+          </p>
+          <p>
+          Comments can be used to prevent execution when testing code.
+          </p>
+          <h4>
+          Creating a Comment
+          </h4>  
+          <p>
+          Comments starts with a #, and Python will ignore them:
+          </p>
+          <p>
+          Example:
+          </p>
+          <code>
+          #This is a comment
+          print("Hello, World!")
+          </code>
+          </article>
+        </section>
+      
+       <section class="main-section" id="Python_Variables">
+        <header>Python Variables</header>
+        <article>
+          <h4>Creating Variables</h4>
+          <p>
+            Variables are containers for storing data values.
+          </p>
+          <p>
+            Unlike other programming languages, Python has no command for declaring a variable.
+          </p>
+
+          <p>
+            A variable is created the moment you first assign a value to it.            </p>
+          <p>
+            Example
+            </p>
+          <code>
+            x = 5
+            y = "John"
+            print(x)
+            print(y)
+            </code>
+          </article>
+        </section>
+      
+       <section class="main-section" id="Python_Numbers">
+        <header>Python Numbers</header>
+        <article>
+          <p>
+            There are three numeric types in Python:
+            </p>
+          <ul>
+            <li>
+              int : integer, is a whole number, positive or negative, without decimals, of unlimited length.
+                </li>
+            <li>
+              float : "floating point number" is a number, positive or negative, containing one or more decimals.
+              </li>
+            <li>
+              complex : Complex numbers are written with a "j" as the imaginary part.
+              </li>
+            </ul>
+          <p>
+            Examples
+           </p>
+           <p>
+           Integers:
+           </p>
+           <code>
+           x = 1
+           y = 35656222554887711
+           z = -3255522
+           </code>
+
+           <p>
+           Floats:
+           </p>
+           <code>
+           x = 1.10
+           y = 1.0
+           z = -35.59
+           </code>
+           <p>
+           Complex:
+            </p>
+           <code>
+           x = 3+5j
+           y = 5j
+           z = -5j
+           </code>
+
+          </article>
+        </section>
+      
+       <section class="main-section" id="Python_Casting">
+        <header>Python Casting</header>
+        <article>
+         <h4>
+           Specify a Variable Type
+          </h4>
+          <p>
+There may be times when you want to specify a type on to a variable. This can be done with casting. Python is an object-orientated language, and as such it uses classes to define data types, including its primitive types.
+            </p>
+       <p>
+Casting in python is therefore done using constructor functions:
+        </p>
+          <ul>
+            <li>
+int() - constructs an integer number from an integer literal, a float literal (by rounding down to the previous whole number), or a string literal (providing the string represents a whole number)
+              </li>
+            <li>
+float() - constructs a float number from an integer literal, a float literal or a string literal (providing the string represents a float or an integer)
+              </li>
+            <li>
+str() - constructs a string from a wide variety of data types, including strings, integer literals and float literals
+              </li>
+            </ul>
+          <p>
+        Example
+          </p>
+          <p>
+        Integers:
+           </p>
+          <code>
+        x = int(1)   # x will be 1
+        y = int(2.8) # y will be 2
+        z = int("3") # z will be 3
+           </code>
+          </article>
+        </section>
+      
+       <section class="main-section" id="Python_Strings">
+        <header>Python Strings</header>
+        <article>
+          <h4>
+          String Literals
+            </h4>
+          <p>
+String literals in python are surrounded by either single quotation marks, or double quotation marks.
+            </p>
+           <p>
+'hello' is the same as "hello".
+          </p>
+          <p>
+You can display a string literal with the print() function:
+         </p>
+          <p>
+          Example
+          </p>
+       <code>   
+       print("Hello")
+       print('Hello')
+          </code>
+          <h4>
+Assign String to a Variable
+            </h4>
+          <p>
+Assigning a string to a variable is done with the variable name followed by an equal sign and the string:
+          </p>
+          <p>
+        Example
+            </p>
+          <code>
+        a = "Hello"
+          print(a)
+            </code>
+          </article>
+        </section>
+        
+       <section class="main-section" id="Python_Operators">
+        <header>Python Operators</header>
+        <article>
+          <p>
+          Operators are used to perform operations on variables and values.
+          </p>
+          <p>
+           Python divides the operators in the following groups:
+          </p>
+          <ul>
+           <li>
+          Arithmetic operators
+             </li>
+            <li>
+          Assignment operators
+              </li>
+            <li>
+          Comparison operators
+              </li>
+            <li>
+          Logical operators
+              </li>
+            <li>
+          Identity operators
+              </li>
+            <li>
+          Membership operators
+              </li>
+            <li>
+          Bitwise operators
+              </li>
+         </ul>
+          </article>
+        </section>
+      
+       <section class="main-section" id="Python_Lists">
+        <header>Python Lists</header>
+        <article>
+          <h4>
+          List
+            </h4>
+            <p>          
+        A list is a collection which is ordered and changeable. In Python lists are written with square brackets.
+          </p>
+          <p>
+            Example
+            </p>
+          <p>
+        Create a List:
+          </p>
+          <code>
+          thislist = ["apple", "banana", "cherry"]
+          print(thislist)
+            </code>
+          </article>
+        </section>
+       <section class="main-section" id="Reference">
+         <header>Reference</header>
+         <article>
+           <ul>
+             <li>
+               All the documentations were taken from <a href="https://www.w3schools.com/python/">W3S</a>
+               </li>
+             </ul>
+           </article>
+         </section>
+    </main>
+       
+    </body>
+  </html>
